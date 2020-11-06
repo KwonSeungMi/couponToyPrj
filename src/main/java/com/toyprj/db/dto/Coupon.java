@@ -1,6 +1,6 @@
 package com.toyprj.db.dto;
  
-public class Test {
+public class Coupon {
  
     private int coupon_id;
     
