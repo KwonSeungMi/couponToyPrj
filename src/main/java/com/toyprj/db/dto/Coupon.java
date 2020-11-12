@@ -1,6 +1,10 @@
 package com.toyprj.db.dto;
  
 public class Coupon {
+	
+	public Coupon() {
+		super();
+	}
  
     private int coupon_id;
     

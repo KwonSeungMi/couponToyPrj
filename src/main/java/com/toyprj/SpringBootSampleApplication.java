@@ -13,8 +13,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 @SpringBootApplication
-@Configuration
-@MapperScan(basePackages="com.toyprj.db.mapper")
+//@Configuration
+//@MapperScan(basePackages="com.toyprj.db.mapper")
 public class SpringBootSampleApplication {
 
 	public static void main(String[] args) {

@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.toyprj.db.mapper.CouponMapper">
+   
+   <!-- 전체 coupon List 조회  -->
     <select id="getAll" resultType="com.toyprj.db.dto.Coupon">
         SELECT * FROM coupondb.tb_coupon_list
     </select>
+    
+    <!-- 쿠폰 Insert -->
     <!-- 
     <select id / resultType / parameterType>
     </select>
      -->
+     <insert id="couponInsert" parameterType="com.toyprj.db.dto.Coupon">
+        INSERT INTO coupondb.tb_coupon_list VALUES(#{coupon_id}, #{coupon_no}, #{email})
+     </insert>
+
+     
+     
 </mapper>
 
